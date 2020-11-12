@@ -1,0 +1,181 @@
+{
+    "settings": {
+        "icons" : true
+    },
+    "firstname": "Alex",
+    "familyname": "Day",
+    "bio_data": {
+        "email": "adday@clemson.edu",
+        "location": "Grove City, PA",
+        "website": "https://alexday.me",
+        "phone": "(724) 841 2634",
+        "skills": {
+            "details": [
+                {
+                    "type": "Programming Languages",
+                    "items": [
+                        "Python",
+                        "Java",
+                        "C\#",
+                        "C/C++",
+                        "HTML/JavaScript/CSS"
+                    ]
+                },
+                {
+                    "type": "Technologies",
+                    "items": [
+                        "Linux",
+                        "Git",
+                        "LaTeX",
+                        "Tableau",
+                        "Robot Operating System/Gazebo",
+                        "SQL"
+                    ]
+                }
+            ]
+        },
+        "education": {
+            "schools": [
+                {
+                    "degree": "Ph.D. Computer Science",
+                    "institution": "Clemson University",
+                    "graduation_year": "September 2020",
+                    "gpa": "",
+                    "location": "Clemson, SC"
+                },
+                {
+                    "degree": "B.S. Computer Science",
+                    "institution": "Clarion University of Pennsylvania",
+                    "graduation_year": "August 2016 - December 2019",
+                    "gpa": "(cum laude)",
+                    "location": "Clarion, PA"
+                }
+            ]
+        },
+        "experience": {
+            "items": [
+                {
+                    "organisation": "Clemson University",
+                    "location": "Clemson, SC",
+                    "title": "Lead Graduate Teaching Assistant",
+                    "date": "September 2020",
+                    "type": "education",
+                    "details": [
+                        "Assist faculty members with instruction using remote learning technologies",
+                        "Lead two lab sections of 30 students to reinforce new software development techniques"
+                    ]
+                },
+                {
+                    "organisation": "JGMS Inc.",
+                    "location": "Grand Rapids, CO",
+                    "title": "Data Scientist (R\&D)",
+                    "date": "May 2020 - September 2020",
+                    "type": "industry",
+                    "details": [
+                        "Designed neural networks for massive document classification and bid prediction with Keras in Python",
+                        "Developed REST API using Flask to expose an endpoint for document summarization and classification",
+                        "Conducted market research to determine market gaps for future projects"
+                    ]
+                },
+                {
+                    "organisation": "University of Arizona",
+                    "location": "Tucson, AZ",
+                    "title": "CAT Vehicle Research Assistant (REU)",
+                    "date": "May 2019 - August 2019",
+                    "type": "research",
+                    "details": [
+                        "Worked within a team of 3 to develop a simple way to create autonomous vehicle paths with WebGME for use in a 4th grade curriculum",
+                        "Developed a verification server in Flask that performed reachability analysis on a given path",
+                        "Prepared and presented research at the UROC conference at the University of Arizona",
+                        "Extensively tested the project in both simulation and on the Cognitive and Autonomous Test (CAT) Vehicle"
+                    ]
+                },
+                {
+                    "organisation": "Komatsu Mining Ltd.",
+                    "location": "Franklin, PA",
+                    "title": "Student Engineer",
+                    "date": "May 2018 - August 2018 and December 2018 - January 2019",
+                    "type": "industry",
+                    "details": [
+                        "Implemented a logging management tool in C\# to be used on all Komatsu Mining equipment",
+                        "Created data analysis tools in Excel VBA and Python to assist with debugging of all mining machines",
+                        "Augmented the Longwall Shearer testbed with a powercycle scheduler built on the Raspberry Pi platform"
+                    ]
+                }
+
+            ]
+        },
+        "projects": {
+            "items": [
+                {
+                    "title": "English to Emoji Translation",
+                    "technologies": "Python, NLTK, spaCy",
+                    "link": "https://www.alexday.me/projects/emoji",
+                    "details": [
+                        "Devised novel algorithm for translating sentences into emoji counterparts for information compression",
+                        "Created a new sentence splitting algorithm based on part-of-speech and dependency relations",
+                        "Accepted for publication in PACISE Journal in 2019 (delayed by COVID)"
+                    ]
+                }
+            ]
+        },
+        "awards": {
+            "items": [
+                {
+                    "award": "Clarion University CS Dept. Student of the Month",
+                    "date": "December 2019"
+                },
+                {
+                    "award": "Clarion University Deans List",
+                    "date": "Fall 2018, Spring 2019"
+                },
+                {
+                    "award": "Elizabeth Ross AITP Scholarship",
+                    "date": "2018, 2019"
+                },
+                {
+                    "award": "George Lewis Scholarship",
+                    "date": "2018, 2019"
+                },
+                {
+                    "award": "Joy Scholarship",
+                    "date": "2016"
+                }
+
+            ]
+        },
+        "organisations": {
+            "items": [
+                {
+                    "name": "Association of Information Technology Professionals",
+                    "location": "Clarion, PA",
+                    "date": "August 2016 - December 2019",
+                    "positions": [
+                        {
+                            "title": "President",
+                            "date": "August 2018 - May 2019",
+                            "details": [
+                                "Ran weekly meetings to update members on activities of the group",
+                                "Hosted multiple hour long seminars on topics including version control and robotics"
+                            ]
+                        },
+                        {
+                            "title": "Vice President",
+                            "date": "August 2017 - May 2018",
+                            "details": [
+                                "Assisted in running weekly meetings to update members on activities of the group",
+                                "Hosted multiple hour long seminars on topics including open source and unit testing"
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        },
+        "papers": {
+        "items": [
+
+            ]
+        }
+    }
+}
