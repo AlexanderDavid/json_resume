@@ -146,8 +146,10 @@
     <%#projects%>
         \header{Projects}
         <%#items%>
-            \project{\href{<%&link%>}{<%&title%>}}{<%&technologies%>}
-            <%#details%>{<%& . %>}<%/details%>
+            <%#first%>
+                \project{\href{<%&link%>}{<%&title%>}}{<%&technologies%>}
+                <%#details%>{<%& . %>}<%/details%>
+            <%/first%>
         <%/items%>
     <%/projects%>
 
@@ -158,14 +160,22 @@
     <%#organisations%>
         \header{Leadership and Involvement}
         <%#items%>
-            \textbf{<%&name%>} \hfill <%&location%>\\<%&date%>\\
-            \vspace{-3.5mm}
-            <%#positions%>
-                \employer{}{}{<%&title%>}{<%&date%>} <%#details%> {<%& . %>} <%/details%>
-                \vspace{-6mm}
-            <%/positions%>
+            <%#first%>
+                <%^position%>
+                    \textbf{<%&name%>} \hfill <%&location%>\\<%&date%>\\
+                    \vspace{-3.5mm}
+                    <%#positions%>
+                        \employer{}{}{<%&title%>}{<%&date%>} <%#details%> {<%& . %>} <%/details%>
+                        \vspace{-6mm}
+                    <%/positions%>
+                    \vspace{4mm}
+                <%/position%>
+                <%#position%>
+                    \employer{<%&name%>}{<%&location%>}{<%&position%>}{<%&date%>} <%#details%> {<%& . %>} <%/details%>
+                    \vspace{-2mm}
+                <%/position%>
+            <%/first%>
         <%/items%>
-        \vspace{6mm}
     <%/organisations%>
 
 
