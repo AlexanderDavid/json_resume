@@ -108,7 +108,7 @@
                     "title": "English to Emoji Translation",
                     "technologies": "Python, NLTK, spaCy",
                     "link": "https://www.alexday.me/projects/emoji",
-                    "first": true,
+                    "first": false,
                     "details": [
                         "Devised novel algorithm for translating sentences into emoji counterparts for information compression",
                         "Created a new sentence splitting algorithm based on part-of-speech and dependency relations",
@@ -116,17 +116,17 @@
                     ]
                 },
                 {
-                    "title": "Powerlaw Collision Avoidance with Autonomous Vehicles",
-                    "technologies": "Python, OpenAI Gym",
-                    "link": "",
-                    "first": false,
+                    "title": "Collision Avoidance Evaluation",
+                    "technologies": "Python, C++, Cython",
+                    "link": "https://www.alexday.me/projects/powerlaw/",
+                    "first": true,
                     "details": [
-                        "Implemented the PowerLaw collision avoidence model in Python",
-                        "Extended the PowerLaw model to support an existing autonomous vehicle framework"
+                        "Developed a Cython wrapper for the official C++ PowerLaw simulation",
+                        "Implemented interaction overhead and energy efficiency calculations to evaluate simulations",
+                        "Created an efficient pipeline for evaluating different algorithms on various agent configurations"
                     ]
 
                 }
-
             ]
         },
         "awards": {
