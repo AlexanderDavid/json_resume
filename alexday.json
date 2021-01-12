@@ -4,7 +4,7 @@
     "bio_data": {
         "email": "adday@clemson.edu",
         "location": "Grove City, PA",
-        "website": "https://alexday.me",
+        "website": "https://www.alexday.me",
         "phone": "(724) 841 2634",
         "skills": {
             "details": [
@@ -37,7 +37,7 @@
                     "degree": "Ph.D. Computer Science",
                     "institution": "Clemson University",
                     "graduation_year": "September 2020",
-                    "gpa": "",
+                    "gpa": "(GPA: 4.0/4.0)",
                     "location": "Clemson, SC"
                 },
                 {
@@ -51,6 +51,17 @@
         },
         "experience": {
             "items": [
+	        {
+                    "organisation": "Clemson University",
+                    "location": "Clemson, SC",
+                    "title": "Graduate Research Assistant",
+                    "date": "September 2020",
+                    "research": true,
+                    "details": [
+                        "Working with Dr. Ioannis Karamouzas on learning multi-robot navigation from human data",
+                        "Developing a pipeline for efficient quantative evaluation and visualization of collision avoidance techniques"
+                    ]
+	        },
                 {
                     "organisation": "Clemson University",
                     "location": "Clemson, SC",
@@ -81,10 +92,10 @@
                     "date": "May 2019 - August 2019",
                     "research": true,
                     "details": [
-                        "Worked within a team of 3 to develop a simple way to create autonomous vehicle paths with WebGME for use in a 4th grade curriculum",
-                        "Developed a verification server in Flask that performed reachability analysis on a given path",
+                        "Created a domain specific language to create autonomous vehicle paths with 3 other students",
+                        "Developed a verification server in Flask that proved the safety of a given path",
                         "Prepared and presented research at the UROC conference at the University of Arizona",
-                        "Extensively tested the project in both simulation and on the Cognitive and Autonomous Test (CAT) Vehicle"
+                        "Extensively tested the language and verification in both simulation and on hardware"
                     ]
                 },
                 {
