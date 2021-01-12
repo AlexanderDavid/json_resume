@@ -24,8 +24,6 @@
     %\renewcommand{\encodingdefault}{cg}
     %\renewcommand{\rmdefault}{lgrcmr}
 
-    \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-
     % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
     % Gobblers
@@ -40,38 +38,43 @@
     \makeatother
     % End Gobblers
 
+    \def \interspace {7px}
+    \def \itempad {0.1px}
+
     \newcommand{\lineunder} {
         \vspace*{-8pt} \\
         \hspace*{-18pt} \hrulefill \\
     }
 
     \newcommand{\header} [1] {
-        {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-        \vspace*{-6pt} \lineunder
+       % {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+       % \vspace*{-6pt} \lineunder
+       \vspace{3px}
+       \hspace{-18pt}
+       \textsc{#1}
+       \lineunder
+       \vspace{3px}
     }
 
     \newcommand{\employer}[5]{%
         \textbf{#1} \hfill #2\\
         \textit{#3} \hfill #4\\
-        \vspace{-1.5mm}
-        \begin{itemize} \itemsep 0.5pt
+	\begin{itemize}[itemsep=\itempad,topsep=0pt,]
             \item #5
             \checknextargemployer
         }
 
     \newcommand{\skills}[2]{%
-        \vspace{1mm}
-        \begin{tabular}{ l l }
+	\noindent\begin{tabular}{@{}ll}
         Programming Languages: & #1\\
         Technologies:          & #2\\
         \end{tabular}
-        \vspace{1mm}
     }
 
     \newcommand{\project} [3] {
         {\textbf{#1}} {\sl #2} \\
         \vspace{-1.5mm}
-        \begin{itemize} \itemsep 0.5pt
+        \begin{itemize} \itemsep \itempad
             \item #3
             \checknextargemployer
         }
@@ -88,7 +91,6 @@
     \newcommand{\school} [5] {
         \textbf{#1}\hfill #2\\
         #3 #4 \hfill #5\\
-        \vspace{2mm}
     }
 
     \newcommand{\award}[2]{
@@ -96,6 +98,7 @@
         \hfill #2
         \vspace*{1mm}\\
     }
+
     % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
     \begin{document}
@@ -108,7 +111,8 @@
         % CONTACT INFORMATION %
         %%%%%%%%%%%%%%%%%%%%%%%
         \contact{<%&firstname%> <%&familyname%>}
-                {<%&location%> $\cdot$ <%&email%> $\cdot$ <%&phone%> $\cdot$ \href{<%&website%>} {\underline{<%&website%>}}}
+                {<%&location%> $\cdot$ \href{mailto://<%&email%>}{\underline{<%&email%>
+}} $\cdot$ <%&phone%> $\cdot$ \href{<%&website%>} {\underline{<%&website%>}}}
 
         %%%%%%%%%%%%%
         % EDUCATION %
@@ -117,8 +121,9 @@
             \header{Education}
             <%#schools%>
                     \school{<%&institution%>}{<%&location%>} {<%&degree%>}{\textit{<%&gpa%>}}{<%&graduation_year%>}
-                    \vspace{-4px}
+		    \vspace{\interspace}
             <%/schools%>
+	    \vspace{-\interspace}
         <%/education%>
 
         %%%%%%%%%%%%%%%%%%%%%%%
@@ -132,53 +137,55 @@
                     \employer{<%&organisation%>}{<%&location%>}
                     {<%&title%>}{<%&date%>}
                     <%#details%>{<%& . %>}<%/details%>
+		    \vspace{\interspace}
                 <%/research%>
             <%/items%>
+	    \vspace{-\interspace}
         <%/experience%>
 
         %==== Publications ====%
         <%#papers%>
             \header{Publications}
-            \begin{description}[leftmargin=5.5pt]
+            \begin{itemize}[leftmargin=0px, label={}, itemsep=\interspace, topsep=0pt]
             <%#items%>
                 <%#link%>
-                    \item[] \href{<%&link%>}{\bibentry{<%&key%>}}
+                    \item \href{<%&link%>}{\bibentry{<%&key%>}}
                 <%/link%>
                 <%^link%>
-                    \item[] \bibentry{<%&key%>}
+                    \item \bibentry{<%&key%>}
                 <%/link%>
             <%/items%>
-            \end{description}
+            \end{itemize}
         <%/papers%>
 
         %==== Talks ====%
         <%#talks%>
             \header{Talks}
-            \begin{description}[leftmargin=5.5pt]
+            \begin{itemize}[leftmargin=0px, label={}, itemsep=\interspace, topsep=0pt]
             <%#items%>
                 <%#link%>
-                    \item[] \href{<%&link%>}{\bibentry{<%&key%>}}
+                    \item \href{<%&link%>}{\bibentry{<%&key%>}}
                 <%/link%>
                 <%^link%>
-                    \item[] \bibentry{<%&key%>}
+                    \item \bibentry{<%&key%>}
                 <%/link%>
             <%/items%>
-            \end{description}
+            \end{itemize}
         <%/talks%>
 
         %==== Poster Presentations ====%
         <%#posters%>
             \header{Poster Presentations}
-            \begin{description}[leftmargin=5.5pt]
+            \begin{itemize}[leftmargin=0px, label={}, itemsep=\interspace, topsep=0pt]
             <%#items%>
                 <%#link%>
-                    \item[] \href{<%&link%>}{\bibentry{<%&key%>}}
+                    \item \href{<%&link%>}{\bibentry{<%&key%>}}
                 <%/link%>
                 <%^link%>
-                    \item[] \bibentry{<%&key%>}
+                    \item \bibentry{<%&key%>}
                 <%/link%>
             <%/items%>
-            \end{description}
+            \end{itemize}
         <%/posters%>
 
 
@@ -207,8 +214,10 @@
                     \employer{<%&organisation%>}{<%&location%>}
                     {<%&title%>}{<%&date%>}
                     <%#details%>{<%& . %>}<%/details%>
+		    \vspace{\interspace}
                 <%/research%>
             <%/items%>
+	    \vspace{-\interspace}
         <%/experience%>
 
         %%%%%%%%%%
@@ -230,18 +239,17 @@
             <%#items%>
                 <%^position%>
                     \textbf{<%&name%>} \hfill <%&location%>\\<%&date%>\\
-                    \vspace{-3.5mm}
                     <%#positions%>
-                        \employer{}{}{<%&title%>}{<%&date%>} <%#details%> {<%& . %>} <%/details%>
-                        \vspace{-6mm}
+		    	\textit{<%&title%>}\hfill{}<%&date%>\\
                     <%/positions%>
-                    \vspace{4mm}
                 <%/position%>
                 <%#position%>
-                    \employer{<%&name%>}{<%&location%>}{<%&position%>}{<%&date%>} <%#details%> {<%& . %>} <%/details%>
-                    \vspace{-2mm}
+                    \textbf{<%&name%>} \hfill <%&location%>\\
+		    \textit{<%&position%>}\hfill{}<%&date%>\\
                 <%/position%>
+		\vspace{\interspace}
             <%/items%>
+	    \vspace{-\interspace}
         <%/organisations%>
 
         %%%%%%%%%%
