@@ -57,6 +57,7 @@
                     "title": "Graduate Research Assistant",
                     "date": "September 2020",
                     "research": true,
+                    "resume": true,
                     "details": [
                         "Working with Dr. Ioannis Karamouzas on learning multi-robot navigation from human data",
                         "Developing a pipeline for efficient quantative evaluation and visualization of collision avoidance techniques"
@@ -68,6 +69,7 @@
                     "title": "Lead Graduate Teaching Assistant",
                     "date": "September 2020",
                     "research": false,
+                    "resume": true,
                     "details": [
                         "Assist faculty members with instruction using remote learning technologies",
                         "Lead two lab sections of 30 students to reinforce new software development techniques"
@@ -79,6 +81,7 @@
                     "title": "Data Scientist (R\&D)",
                     "date": "May 2020 - September 2020",
                     "research": false,
+                    "resume": true,
                     "details": [
                         "Designed neural networks for massive document classification and bid prediction with Keras in Python",
                         "Developed REST API using Flask to expose an endpoint for document summarization and classification",
@@ -91,6 +94,7 @@
                     "title": "CAT Vehicle Research Assistant (REU)",
                     "date": "May 2019 - August 2019",
                     "research": true,
+		    "resume": true,
                     "details": [
                         "Created a domain specific language to create autonomous vehicle paths with 3 other students",
                         "Developed a verification server in Flask that proved the safety of a given path",
@@ -103,6 +107,7 @@
                     "location": "Franklin, PA",
                     "title": "Student Engineer",
                     "date": "May 2018 - August 2018 and December 2018 - January 2019",
+		    "resume": false,
                     "research": false,
                     "details": [
                         "Implemented a logging management tool in C\# to be used on all Komatsu Mining equipment",
@@ -167,11 +172,28 @@
         },
         "organisations": {
             "items": [
+	        {
+		    "name": "Clemson University Graduate Student Government",
+		    "location": "Clemson, SC",
+		    "date": "January 2020",
+                    "first": true,
+		    "position": "Senator -- Computer Science Department",
+		    "details": ["Filler", "Lorem"]
+	        },
+		{
+		    "name": "College of Business and Information Science Advisory Board",
+		    "location": "Clarion, PA",
+		    "date": "January 2019 - December 2019",
+		    "position": "Member -- Computer Science Department",
+		    "details": [
+			    "Advocated for the Computer Science student body in college wide issues",
+			    "Acted as an intermediary between computer science students and the college"
+		    ]
+		},
                 {
                     "name": "Association of Information Technology Professionals",
                     "location": "Clarion, PA",
                     "date": "August 2016 - December 2019",
-                    "first": true,
                     "positions": [
                         {
                             "title": "President",
@@ -190,27 +212,6 @@
                             ]
                         }
 
-                    ]
-                },
-                {
-                    "name": "Clarion University Programming Team",
-                    "location": "Clarion, PA",
-                    "date": "August 2017 - December 2019",
-                    "position": "Member",
-                    "details": [
-                        "Competed at multiple programming competitions all over Pennsylvania",
-                        "Hosted weekly meetings to practice solving a competitive programming algorithms"
-                    ]
-                },
-                {
-                    "name": "Clarion University Crystallography Contest",
-                    "location": "Clarion, PA",
-                    "date": "August 2017 - December 2019",
-                    "position": "Seminar Assistant and Founder",
-                    "details": [
-                        "Taught elementary school students about crystallography in a lab-like setting during seminars",
-                        "Formalized contest’s rules along with other members",
-                        "Assisted with creation of the contest’s website"
                     ]
                 }
             ]
