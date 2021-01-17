@@ -1,0 +1,75 @@
+    % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+    % Gobblers
+    \makeatletter
+
+    \newcommand{\checknextargemployer}{\@ifnextchar\bgroup{\gobblenextargemployer}{\end{itemize}} }
+    \newcommand{\gobblenextargemployer}[1]{ \item #1\@ifnextchar\bgroup{\gobblenextargemployer}{\end{itemize}} }
+
+    \newcommand{\checknextargskills}{\@ifnextchar\bgroup{\gobblenextargskills}{\end{tabular}} }
+    \newcommand{\gobblenextargskills}[2]{ #1 & #2\\ \@ifnextchar\bgroup{\gobblenextargskills}{\end{tabular}} }
+
+    \makeatother
+    % End Gobblers
+
+    \def \interspace {7px}
+    \def \itempad {0.1px}
+
+    \newcommand{\lineunder} {
+        \vspace*{-8pt} \\
+        \hspace*{-18pt} \hrulefill \\
+    }
+
+    \newcommand{\header} [1] {
+       % {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+       % \vspace*{-6pt} \lineunder
+       \vspace{3px}
+       \hspace{-18pt}
+       \textsc{#1}
+       \lineunder
+       \vspace{3px}
+    }
+
+    \newcommand{\employer}[5]{%
+        \textbf{#1} \hfill #2\\
+        \textit{#3} \hfill #4\\
+	\begin{itemize}[itemsep=\itempad,topsep=0pt,]
+            \item #5
+            \checknextargemployer
+        }
+
+    \newcommand{\skills}[2]{%
+	\noindent\begin{tabular}{@{}ll}
+        Programming Languages: & #1\\
+        Technologies:          & #2\\
+        \end{tabular}
+    }
+
+    \newcommand{\project} [3] {
+        {\textbf{#1}} {\sl #2} \\
+	\begin{itemize}[itemsep=\itempad,topsep=0pt,]
+            \item #3
+            \checknextargemployer
+        }
+
+    \newcommand{\contact} [3] {
+        \vspace*{-10pt}
+        \begin{center}
+            {\Huge \scshape {#1}}\\
+            #2
+        \end{center}
+        \vspace*{-8pt}
+    }
+
+    \newcommand{\school} [5] {
+        \textbf{#1}\hfill #2\\
+        #3 #4 \hfill #5\\
+    }
+
+    \newcommand{\award}[2]{
+        \textbf{#1}
+        \hfill #2
+        \vspace*{1mm}\\
+    }
+
+    % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
