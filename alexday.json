@@ -12,9 +12,9 @@
                     "type": "Programming Languages",
                     "items": [
                         "Python",
+                        "C/C++",
                         "Java",
                         "C\#",
-                        "C/C++",
                         "HTML/JavaScript/CSS"
                     ]
                 },
@@ -98,7 +98,6 @@
                     "details": [
                         "Created a domain specific language to create autonomous vehicle paths with 3 other students",
                         "Developed a verification server in Flask that proved the safety of a given path",
-                        "Prepared and presented research at the UROC conference at the University of Arizona",
                         "Extensively tested the language and verification in both simulation and on hardware"
                     ]
                 },
@@ -124,18 +123,18 @@
                     "title": "English to Emoji Translation",
                     "technologies": "Python, NLTK, spaCy",
                     "link": "https://www.alexday.me/projects/emoji",
-                    "first": false,
+                    "first": true,
                     "details": [
                         "Devised novel algorithm for translating sentences into emoji counterparts for information compression",
                         "Created a new sentence splitting algorithm based on part-of-speech and dependency relations",
-                        "Accepted for publication in PACISE Journal in 2019 (delayed by COVID)"
+                        "Published in PACISE 2020 and awarded best undergraduate paper"
                     ]
                 },
                 {
                     "title": "Collision Avoidance Evaluation",
                     "technologies": "Python, C++, Cython",
                     "link": "https://www.alexday.me/projects/powerlaw/",
-                    "first": true,
+                    "first": false,
                     "details": [
                         "Developed a Cython wrapper for the official C++ PowerLaw simulation",
                         "Implemented interaction overhead and energy efficiency calculations to evaluate simulations",
@@ -147,6 +146,10 @@
         },
         "awards": {
             "items": [
+		{
+		    "award": "PACISE 2020 Best Undergraduate Student Paper",
+		    "date": "January 2021"
+		},
                 {
                     "award": "Clarion University CS Dept. Student of the Month",
                     "date": "December 2019"
@@ -154,20 +157,7 @@
                 {
                     "award": "Clarion University Deans List",
                     "date": "Fall 2018, Spring 2019"
-                },
-                {
-                    "award": "Elizabeth Ross AITP Scholarship",
-                    "date": "2018, 2019"
-                },
-                {
-                    "award": "George Lewis Scholarship",
-                    "date": "2018, 2019"
-                },
-                {
-                    "award": "Joy Scholarship",
-                    "date": "2016"
                 }
-
             ]
         },
         "organisations": {
@@ -178,6 +168,13 @@
 		    "date": "January 2020",
                     "first": true,
 		    "position": "Senator -- Computer Science Department",
+		    "details": ["Filler", "Lorem"]
+	        },
+	        {
+		    "name": "Clemson University Intellectual Property Committee",
+		    "location": "Clemson, SC",
+		    "date": "January 2020",
+		    "position": "Graduate School Representative",
 		    "details": ["Filler", "Lorem"]
 	        },
 		{
