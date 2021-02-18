@@ -112,17 +112,15 @@
         % PROJECTS %
         %%%%%%%%%%%%
 
-        <%#projects%>
-            \header{Projects}
-            <%#items%>
-                \project{\href{<%&link%>}{<%&title%>}}{<%&technologies%>}
-                <%#details%>{<%& . %>}<%/details%>
-		\vspace{\interspace}
-            <%/items%>
-	    \vspace{-\interspace}
-        <%/projects%>
-
-        \newpage
+%        <%#projects%>
+%           \header{Projects}
+%           <%#items%>
+%               \project{\href{<%&link%>}{<%&title%>}}{<%&technologies%>}
+%               <%#details%>{<%& . %>}<%/details%>
+%       	\vspace{\interspace}
+%           <%/items%>
+%           \vspace{-\interspace}
+%       <%/projects%>
 
         %%%%%%%%%%%%%%
         % EXPERIENCE %
@@ -136,6 +134,7 @@
                     {<%&title%>}{<%&date%>}
                     <%#details%>{<%& . %>}<%/details%>
 		    \vspace{\interspace}
+		    \newline
                 <%/research%>
             <%/items%>
 	    \vspace{-\interspace}
